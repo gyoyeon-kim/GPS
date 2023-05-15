@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/a2.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon.xml" value="0.1" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_a1.xml" value="0.4" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_a2.xml" value="0.1" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_a8.xml" value="0.264" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_a9.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_b1.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_b13.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_b2.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_b3.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_b4.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_b8.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_c1.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_c12.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_c13.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_c2.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_c4.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_c5.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_c6.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_c7.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_c9.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d10.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d11.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d15.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d17.xml" value="0.17578125" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d18.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d2.xml" value="0.4" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d5.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d6.xml" value="0.264" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d7.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d8.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d9.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_a2.xml" value="0.264" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/custom_balloon_b13.xml" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
