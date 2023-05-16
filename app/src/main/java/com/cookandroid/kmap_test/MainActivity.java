@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
             View view = inflater.inflate(R.layout.custom_balloon, null);
             View view2 = inflater.inflate(R.layout.custom_balloon_a2, null);
 
-            // custom balloon view 설정
+
             if (poiItem != null) {
                 TextView titleTextView = view.findViewById(R.id.title);
                 titleTextView.setText(poiItem.getItemName());
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Custom Balloon View 설정
+
         MapCalloutBalloonAdapter adapter = new MapCalloutBalloonAdapter(context);
         custom_balloon = adapter.getCalloutBalloon(null);
         custom_balloon_a2 = adapter.getCalloutBalloon(null);
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         customMarker.setMarkerType(MapPOIItem.MarkerType.CustomImage);
         customMarker.setCustomImageResourceId(R.drawable.custom_marker_red);
 
-        // Custom Balloon View 설정
+
         customMarker.setCustomCalloutBalloon(adapter.getCalloutBalloon(customMarker));
         customMarker.setCustomPressedCalloutBalloon(adapter.getPressedCalloutBalloon(customMarker));
 
