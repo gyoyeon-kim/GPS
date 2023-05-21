@@ -4,10 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/a2.xml" value="0.24947916666666667" />
-        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon.xml" value="0.1" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/balloon_layout.xml" value="0.1" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon.xml" value="0.6" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_a1.xml" value="0.4" />
-        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_a2.xml" value="0.1" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_a2.xml" value="0.4" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_a8.xml" value="0.264" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_a9.xml" value="0.11930091185410334" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_b1.xml" value="0.11930091185410334" />
@@ -36,7 +37,35 @@
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d7.xml" value="0.11930091185410334" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d8.xml" value="0.11930091185410334" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d9.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_a1.xml" value="0.2269021739130435" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_a2.xml" value="0.264" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_a8.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_a9.xml" value="0.2" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_b1.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_b2.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_b3.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_b4.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_b8.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_c1.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_c12.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_c13.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_c2.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_c4.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_c6.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_c7.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_c9.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d1.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d10.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d11.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d15.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d17.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d18.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d2.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d5.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d6.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d7.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d8.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d9.xml" value="0.2484375" />
       </map>
     </option>
   </component>

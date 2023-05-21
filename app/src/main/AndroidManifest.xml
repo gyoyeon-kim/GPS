@@ -25,11 +25,39 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".guide_a2"
-            android:label="Guide A2"
-            android:parentActivityName=".MainActivity" >
-        </activity>
+        <activity android:name=".guide_a1"/>
+        <activity android:name=".guide_a2"/>
+        <activity android:name=".guide_a8"/>
+        <activity android:name=".guide_a9"/>
+
+        <activity android:name=".guide_b1"/>
+        <activity android:name=".guide_b2"/>
+        <activity android:name=".guide_b3"/>
+        <activity android:name=".guide_b4"/>
+        <activity android:name=".guide_b8"/>
+
+
+        <activity android:name=".guide_c1"/>
+        <activity android:name=".guide_c2"/>
+        <activity android:name=".guide_c4"/>
+        <activity android:name=".guide_c6"/>
+        <activity android:name=".guide_c7"/>
+        <activity android:name=".guide_c9"/>
+        <activity android:name=".guide_c12"/>
+        <activity android:name=".guide_c13"/>
+
+        <activity android:name=".guide_d1"/>
+        <activity android:name=".guide_d2"/>
+        <activity android:name=".guide_d5"/>
+        <activity android:name=".guide_d6"/>
+        <activity android:name=".guide_d7"/>
+        <activity android:name=".guide_d8"/>
+        <activity android:name=".guide_d9"/>
+        <activity android:name=".guide_d10"/>
+        <activity android:name=".guide_d11"/>
+        <activity android:name=".guide_d15"/>
+        <activity android:name=".guide_d17"/>
+        <activity android:name=".guide_d18"/>
 
         <meta-data
             android:name="com.kakao.sdk.AppKey"
