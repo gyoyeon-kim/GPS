@@ -1168,7 +1168,7 @@ public class MainActivity extends AppCompatActivity {
 
         private void startNavigation() {
             if (Build.VERSION.SDK_INT >= 23 &&
-                    ContextCompat.checkSelfPermission(context, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    ContextCompat.checkSelfPermission( getApplicationContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
                 ActivityCompat.requestPermissions(MainActivity.this, new String[]{
                         android.Manifest.permission.ACCESS_FINE_LOCATION}, 0);
             } else {
@@ -1182,6 +1182,16 @@ public class MainActivity extends AppCompatActivity {
                 if (gpsLocation != null) {
                     String user_latitude = String.valueOf(gpsLocation.getLatitude());
                     String user_longitude = String.valueOf(gpsLocation.getLongitude());
+
+                    lm.requestLocationUpdates(LocationManager.GPS_PROVIDER,
+                            1000,
+                            1,
+                            gpsLocationListener);
+                    lm.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
+                            1000,
+                            1,
+                            gpsLocationListener);
+                }
 
                     String url2 = "kakaomap://route?sp=" + user_latitude + "," + user_longitude + "&ep=" + destinationLatitude+","+destinationLongitude+"&by=FOOT";
                     Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url2));
@@ -1199,7 +1209,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-    }
+
+
 
     final LocationListener gpsLocationListener = new LocationListener() {
         public void onLocationChanged(Location location) {
