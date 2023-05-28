@@ -14,10 +14,11 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
+
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="232dp"
-                android:src="@drawable/d2" />
+                android:src="@drawable/c1" />
         </LinearLayout><!--이미지-->
 
         <LinearLayout
@@ -36,12 +37,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text=""
+                android:text="성토마스모어관"
                 android:textSize="20dp" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="경북 경산시 하양읍 대구가톨릭대학교 효성캠퍼스 성토마스모어관" />
+                android:text="경북 경산시 하양읍 하양로 13-13 성토마스모어관" />
         </LinearLayout>
 
         <LinearLayout
@@ -60,6 +61,7 @@
 
 
         </LinearLayout>
+
 
 
 
@@ -82,7 +84,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="1층 : 공무원, 공기업학과"
+                    android:text="군사학과"
                     android:textColor="@color/black"
                     android:textSize="20dp"/>
                 <TextView
@@ -91,14 +93,14 @@
                     android:layout_height="match_parent"
                     android:drawableStart="@drawable/internet"
                     android:drawablePadding="7dp"
-                    android:text="http://academics.cu.ac.kr/home/detail/social/Officials/"
+                    android:text="http://academics.cu.ac.kr/home/detail/social/military/"
                     android:textColorLink="#0000FF"
                     android:autoLink="web" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/Tel"
-                    android:text="053-850-3326"
+                    android:text="053-850-3309"
                     android:textColorLink="#0000FF"
                     android:drawableStart="@drawable/call"
                     android:drawablePadding="7dp"
@@ -111,7 +113,6 @@
                     android:background="@android:color/darker_gray"/>
             </LinearLayout>
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -119,53 +120,14 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="2층 : 행정학과"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"/>
-                <TextView
-                    android:id="@+id/link2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="http://academics.cu.ac.kr/home/detail/social/dpa/"
-                    android:drawableStart="@drawable/internet"
-                    android:drawablePadding="7dp"
-                    android:textColorLink="#0000FF"
-                    android:autoLink="web" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/Tel2"
-                    android:text="053-850-3327"
-                    android:textColorLink="#0000FF"
-                    android:drawableStart="@drawable/call"
-                    android:drawablePadding="7dp"
-                    android:autoLink="phone"/>
-                <View
-                    android:layout_marginTop="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_centerInParent="true"
-                    android:background="@android:color/darker_gray"/>
-
-            </LinearLayout>
-
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="4층 : 기계자동차학부"
+                    android:text="106-1호 : 공무원,공기업학과 "
                     android:textColor="@color/black"
                     android:textSize="20dp"/>
                 <TextView
                     android:id="@+id/link3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="http://dept.cu.ac.kr/user/cuarchi"
+                    android:text="http://academics.cu.ac.kr/home/detail/social/police/"
                     android:drawableStart="@drawable/internet"
                     android:drawablePadding="7dp"
                     android:textColorLink="#0000FF"
@@ -174,42 +136,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/Tel3"
-                    android:text="053-850-2740"
-                    android:textColorLink="#0000FF"
-                    android:drawableStart="@drawable/call"
-                    android:drawablePadding="7dp"
-                    android:autoLink="phone"/>
-                <View
-                    android:layout_marginTop="5dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_centerInParent="true"
-                    android:background="@android:color/darker_gray"/>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="4층 : 경찰행정학과"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"/>
-                <TextView
-                    android:id="@+id/link4"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="http://academics.cu.ac.kr/home/about/social/police/"
-                    android:drawableStart="@drawable/internet"
-                    android:drawablePadding="7dp"
-                    android:textColorLink="#0000FF"
-                    android:autoLink="web" />
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:id="@+id/Tel4"
                     android:text="053-850-3329"
                     android:textColorLink="#0000FF"
                     android:drawableStart="@drawable/call"
@@ -223,6 +149,49 @@
                     android:background="@android:color/darker_gray"/>
 
             </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="411호 : 경찰행정학과"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/link2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="http://academics.cu.ac.kr/home/detail/social/police/"
+                    android:drawableStart="@drawable/internet"
+                    android:drawablePadding="7dp"
+                    android:textColorLink="#0000FF"
+                    android:autoLink="web" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Tel2"
+                    android:text="053-850-3329"
+                    android:textColorLink="#0000FF"
+                    android:drawableStart="@drawable/call"
+                    android:drawablePadding="7dp"
+                    android:autoLink="phone"/>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+
+
+
+
+
 
         </LinearLayout>
 

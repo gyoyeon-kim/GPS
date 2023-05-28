@@ -41,7 +41,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="경북 경산시 하양읍 대구가톨릭대학교 효성캠퍼스 성마티아스관" />
+                android:text="경북 경산시 하양읍 하양로 13-13 성마티아스관" />
         </LinearLayout>
 
         <LinearLayout
