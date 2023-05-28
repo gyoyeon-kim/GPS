@@ -82,7 +82,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="2층 : 건축공학과"
+                    android:text="2층 : 건축학과"
                     android:textColor="@color/black"
                     android:textSize="20dp"/>
                 <TextView

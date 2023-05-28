@@ -1,21 +1,380 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/Scroll_View">
 
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="326dp"
-        android:text="A9 상세페이지 창입니다."
-        android:textSize="35dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"><!--전체-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="232dp"
+                android:src="@drawable/a9" />
+        </LinearLayout><!--이미지-->
 
 
-</LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="vertical"><!--위치 소개-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A9 / John Sye Hall"
+                android:textSize="25dp"
+                android:fontFamily="@font/title1"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="종합강의동"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="경상북도 경산시 하양읍 하양로 13-13 종합강의동" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="25dp">
+
+            <Button
+                android:id="@+id/navi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="길찾기"
+                android:textColor="@color/white"
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="15dp"> <!--층별 소개-->
+            <View
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/darker_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="317호 : 미디어영상광고홍보학부
+                    (언론영상전공, 광고홍보전공)"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/link2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="http://academics.cu.ac.kr/home/detail/social/comm/"
+                    android:drawableStart="@drawable/internet"
+                    android:drawablePadding="7dp"
+                    android:textColorLink="#0000FF"
+                    android:autoLink="web" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Tel2"
+                    android:text="Tel: 053-850-3286 Fax: 053-359-6944"
+                    android:textColorLink="#0000FF"
+                    android:drawableStart="@drawable/call"
+                    android:drawablePadding="7dp"
+                    android:autoLink="phone"/>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="414호 : 언어청각치료학과"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/link8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="http://academics.cu.ac.kr/home/detail/biomedi/ausp/"
+                    android:drawableStart="@drawable/internet"
+                    android:drawablePadding="7dp"
+                    android:textColorLink="#0000FF"
+                    android:autoLink="web" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Tel9"
+                    android:text="Tel: 053-850-2540 Fax: 053-359-6780"
+                    android:textColorLink="#0000FF"
+                    android:drawableStart="@drawable/call"
+                    android:drawablePadding="7dp"
+                    android:autoLink="phone"/>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="414호 : 안경광학과"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/link10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="http://academics.cu.ac.kr/home/detail/biomedi/optom/"
+                    android:drawableStart="@drawable/internet"
+                    android:drawablePadding="7dp"
+                    android:textColorLink="#0000FF"
+                    android:autoLink="web" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Tel10"
+                    android:text="Tel: 053-850-2550 Fax: 053-359-6790"
+                    android:textColorLink="#0000FF"
+                    android:drawableStart="@drawable/call"
+                    android:drawablePadding="7dp"
+                    android:autoLink="phone"/>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="501호 : 국제의료경영학과"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/link9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="http://academics.cu.ac.kr/home/detail/biomedi/medis/"
+                    android:drawableStart="@drawable/internet"
+                    android:drawablePadding="7dp"
+                    android:textColorLink="#0000FF"
+                    android:autoLink="web" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Tel8"
+                    android:text="Tel: 053-850-2530 Fax: 053-359-6860"
+                    android:textColorLink="#0000FF"
+                    android:drawableStart="@drawable/call"
+                    android:drawablePadding="7dp"
+                    android:autoLink="phone"/>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="501호 : 물리치료학과"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/link6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="http://academics.cu.ac.kr/home/detail/biomedi/pt/"
+                    android:drawableStart="@drawable/internet"
+                    android:drawablePadding="7dp"
+                    android:textColorLink="#0000FF"
+                    android:autoLink="web" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Tel6"
+                    android:text="Tel: 053-850-2530 Fax: 053-359-6770"
+                    android:textColorLink="#0000FF"
+                    android:drawableStart="@drawable/call"
+                    android:drawablePadding="7dp"
+                    android:autoLink="phone"/>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="504호 : 건축공학과 "
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/link5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="https://arch.cu.ac.kr/"
+                    android:drawableStart="@drawable/internet"
+                    android:drawablePadding="7dp"
+                    android:textColorLink="#0000FF"
+                    android:autoLink="web" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Tel5"
+                    android:text="Tel: 053-850-2760 Fax: 053-359-6344"
+                    android:textColorLink="#0000FF"
+                    android:drawableStart="@drawable/call"
+                    android:drawablePadding="7dp"
+                    android:autoLink="phone"/>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="609호 : 배터리학과"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"/>
+                <TextView
+                    android:id="@+id/link"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/internet"
+                    android:drawablePadding="7dp"
+                    android:text="http://academics.cu.ac.kr/home/detail/engineer/battery/"
+                    android:textColorLink="#0000FF"
+                    android:autoLink="web" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/Tel"
+                    android:text=" 053-850-2770"
+                    android:textColorLink="#0000FF"
+                    android:drawableStart="@drawable/call"
+                    android:drawablePadding="7dp"
+                    android:autoLink="phone"/>
+                <View
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/darker_gray"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridView1"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:numColumns="3">
+            </GridView>
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:background="#A9A9A9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:textColor="@color/black"
+                android:text="Copyright by Team DCU GPS\n전화번호 : 010-3999-2145\n이메일 : tkdrb7377@gmail.com" />
+
+            <Button
+                android:id="@+id/Button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="TOP ↑" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
