@@ -41,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
     private double destinationLatitude;  // 도착지 위도
     private double destinationLongitude; // 도착치 경도
 
+    private LocationManager locationManager;
+    private LocationListener locationListener;
+
     String user_latitude = "latitude";
     String user_longitude = "";
 
@@ -53,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         mapView = binding.mapView;   // 카카오 지도 뷰
         EditText editText = findViewById(R.id.edit_text);
         Button searchButton = findViewById(R.id.button_search);
+
 
         int permission = ContextCompat.checkSelfPermission(this,
                 android.Manifest.permission.INTERNET);
@@ -434,7 +438,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+
     }
+
+
+
+    public MapView getMapView() {
+        return mapView;
+    }
+
+
 
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grandResults) {
         // READ_PHONE_STATE의 권한 체크 결과를 불러옴
@@ -1167,6 +1181,19 @@ public class MainActivity extends AppCompatActivity {
 
 
         private void startNavigation() {
+
+            locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+            locationListener = new LocationListener() {
+
+                public void onLocationChanged(Location location) {
+                    // 현재 위치 정보를 가져오는 로직을 추가하세요
+                    double latitude = location.getLatitude();   // 현재 위치의 위도
+                    double longitude = location.getLongitude(); // 현재 위치의 경도
+
+
+                }
+            };
+
             if (Build.VERSION.SDK_INT >= 23 &&
                     ContextCompat.checkSelfPermission( getApplicationContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED ) {
                 ActivityCompat.requestPermissions(MainActivity.this, new String[]{
@@ -1193,21 +1220,22 @@ public class MainActivity extends AppCompatActivity {
                             gpsLocationListener);
                 }
 
-                    String url2 = "kakaomap://route?sp=" + user_latitude + "," + user_longitude + "&ep=" + destinationLatitude+","+destinationLongitude+"&by=FOOT";
-                    Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url2));
-                    intent.addCategory(Intent.CATEGORY_BROWSABLE);
-                    List<ResolveInfo> list = context.getPackageManager().queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
+                String url2 = "kakaomap://route?sp=" + user_latitude + "," + user_longitude + "&ep=" + destinationLatitude+","+destinationLongitude+"&by=FOOT";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url2));
+                intent.addCategory(Intent.CATEGORY_BROWSABLE);
+                List<ResolveInfo> list = context.getPackageManager().queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
 
-                    if (list == null || list.isEmpty()) {
-                        startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=net.daum.android.map")));
-                    } else {
-                        startActivity(intent);
-                    }
+                if (list == null || list.isEmpty()) {
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=net.daum.android.map")));
+                } else {
+                    startActivity(intent);
                 }
             }
-
-
         }
+
+
+
+    }
 
 
 
