@@ -25,6 +25,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".search"/>
         <activity android:name=".guide_a1"/>
         <activity android:name=".guide_a2"/>
         <activity android:name=".guide_a8"/>
