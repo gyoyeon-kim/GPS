@@ -4,10 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.146" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/drawable/button_click.xml" value="0.1095" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/drawable/textview_round.xml" value="0.1" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/a2.xml" value="0.24947916666666667" />
-        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/activity_time_picker.xml" value="0.2484375" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/balloon_layout.xml" value="0.4" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon.xml" value="0.6" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_a1.xml" value="0.4" />
@@ -40,7 +42,9 @@
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d7.xml" value="0.11930091185410334" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d8.xml" value="0.11930091185410334" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/custom_balloon_d9.xml" value="0.11930091185410334" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/dcu_activity_main.xml" value="0.2484375" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/dialog.xml" value="0.1" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/edit_timetable.xml" value="0.2484375" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_a1.xml" value="0.1" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_a2.xml" value="0.264" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_a8.xml" value="0.2269021739130435" />
@@ -70,7 +74,12 @@
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d7.xml" value="0.2484375" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d8.xml" value="0.2484375" />
         <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/guide_d9.xml" value="0.1" />
-        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/search.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/inner_table.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/inner_table_header.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/main_actionbar.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/search.xml" value="0.72" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/time_picker_actionbar.xml" value="0.2484375" />
+        <entry key="..\:/Users/82103/AndroidStudioProjects/kmap_test/app/src/main/res/layout/timetable.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.cookandroid.kmap_test">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -14,7 +15,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Kmap_test"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -26,6 +29,8 @@
         </activity>
 
         <activity android:name=".search"/>
+        <activity android:name=".timetable"/>
+        <activity android:name=".EditActivity"/>
         <activity android:name=".guide_a1"/>
         <activity android:name=".guide_a2"/>
         <activity android:name=".guide_a8"/>
@@ -63,6 +68,7 @@
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="ea1fba66e2db8149a4bc66484767d771" />
+
 
     </application>
 

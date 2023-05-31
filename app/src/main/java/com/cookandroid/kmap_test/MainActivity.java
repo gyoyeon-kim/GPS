@@ -27,6 +27,7 @@ import android.Manifest;
 
 import com.cookandroid.kmap_test.databinding.ActivityMainBinding;
 import com.cookandroid.kmap_test.R;
+import com.cookandroid.kmap_test.timetable;
 
 import net.daum.mf.map.api.CalloutBalloonAdapter;
 import net.daum.mf.map.api.MapPOIItem;
@@ -43,12 +44,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ImageButton search = findViewById(R.id.search);
+        ImageButton timetable = findViewById(R.id.timetable);
 
 
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getApplicationContext(),search.class);
+                startActivity(intent);
+
+            }
+        });
+
+        timetable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getApplicationContext(), com.cookandroid.kmap_test.timetable.class);
                 startActivity(intent);
 
             }

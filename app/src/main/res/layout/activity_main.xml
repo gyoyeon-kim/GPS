@@ -33,9 +33,9 @@
                 android:id="@+id/search"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#ffffff"
                 android:scaleType="fitCenter"
-                android:src="@drawable/search"
-                android:background="#ffffff" />
+                android:src="@drawable/search" />
         </LinearLayout>
 
         <LinearLayout
@@ -48,9 +48,9 @@
                 android:id="@+id/timetable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#ffffff"
                 android:scaleType="fitCenter"
-                android:src="@drawable/timetable"
-                android:background="#ffffff" />
+                android:src="@drawable/timetable" />
         </LinearLayout>
     </LinearLayout>
 
