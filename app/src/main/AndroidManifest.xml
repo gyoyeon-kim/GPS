@@ -17,7 +17,8 @@
         android:theme="@style/Theme.Kmap_test"
         android:usesCleartextTraffic="true"
         tools:replace="android:appComponentFactory"
-        android:appComponentFactory="androidx.core.app.CoreComponentFactory">
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:largeHeap="true">
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -68,6 +69,7 @@
         <meta-data
             android:name="com.kakao.sdk.AppKey"
             android:value="ea1fba66e2db8149a4bc66484767d771" />
+
 
 
     </application>

@@ -1,6 +1,7 @@
 package com.cookandroid.kmap_test;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -18,6 +19,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
@@ -45,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ImageButton search = findViewById(R.id.search);
         ImageButton timetable = findViewById(R.id.timetable);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
+
 
 
         search.setOnClickListener(new View.OnClickListener() {
