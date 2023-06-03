@@ -15,6 +15,7 @@ public class EditPresenter implements EditContract.UserActions {
     private EditContract.View editView;
 
     public EditPresenter(EditContract.View editView){
+
         this.editView = editView;
     }
 
@@ -33,11 +34,13 @@ public class EditPresenter implements EditContract.UserActions {
 
     @Override
     public void clickAddTimeBtn() {
+
         editView.createTimeView(null);
     }
 
     @Override
     public void clickDeleteBtn() {
+
         editView.setResult(null);
     }
 

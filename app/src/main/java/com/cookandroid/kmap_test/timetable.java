@@ -1,13 +1,16 @@
 package com.cookandroid.kmap_test;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.cookandroid.kmap_test.presenter.EditPresenter;
 import com.github.tlaabs.timetableview.*;
 import java.util.ArrayList;
 import com.cookandroid.kmap_test.contract.MainContract;
@@ -22,6 +25,8 @@ public class timetable extends AppCompatActivity implements MainContract.View {
 
     private LinearLayout addBtn;
     private MainContract.UserActions mainPresenter;
+
+    private EditPresenter editPresenter;
     private Context context;
 
     private TimetableView timetable;
@@ -38,9 +43,44 @@ public class timetable extends AppCompatActivity implements MainContract.View {
         timetable.setOnStickerSelectEventListener(new TimetableView.OnStickerSelectedListener() {
             @Override
             public void OnStickerSelected(int idx, ArrayList<com.github.tlaabs.timetableview.Schedule> schedules) {
-                mainPresenter.selectSticker(idx,schedules);
+
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(timetable.this);
+                builder.setTitle("Selected Sticker");
+                final String[] selectArray = new String[]{"수정하기", "길찾기","삭제하기"};
+
+                // Set the items for the dialog using selectArray
+                builder.setItems(selectArray, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int position) {
+                        // Handle the item selection based on the position
+                        String selectedOption = selectArray[position];
+                        switch (selectedOption) {
+                            case "수정하기":
+                                mainPresenter.selectSticker(idx,schedules); // Handle 수정하기 action
+                                break;
+                            case "길찾기":
+                                // Handle 길찾기 action
+                                break;
+
+                            case "삭제하기" :
+                                
+
+
+                        }
+                    }
+                });
+
+                // Set the positive button for closing the dialog
+                builder.setPositiveButton("닫기", null);
+
+                // Show the dialog
+                builder.show();
             }
+
         });
+
+
         addBtn = findViewById(R.id.addBtn);
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override

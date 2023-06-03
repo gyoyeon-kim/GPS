@@ -2,9 +2,12 @@ package com.cookandroid.kmap_test.presenter;
 
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
+import com.cookandroid.kmap_test.EditActivity;
+import com.cookandroid.kmap_test.contract.EditContract;
 import com.github.tlaabs.timetableview.Schedule;
 
 import java.util.ArrayList;
@@ -37,6 +40,14 @@ public class MainPresenter implements MainContract.UserActions {
     public void selectSticker(int idx, ArrayList<Schedule> schedules) {
         mainView.startEditActivityForEdit(idx,schedules);
     }
+
+
+
+
+
+
+
+
 
     @Override
     public void prepare() {
