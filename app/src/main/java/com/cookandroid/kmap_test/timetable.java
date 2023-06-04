@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 
+
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +17,8 @@ import java.util.ArrayList;
 import com.cookandroid.kmap_test.contract.MainContract;
 import com.cookandroid.kmap_test.model.PrefManager;
 import com.cookandroid.kmap_test.presenter.MainPresenter;
+import com.cookandroid.kmap_test.search;
+
 
 public class timetable extends AppCompatActivity implements MainContract.View {
     private static final String TAG = "MainActivity";
@@ -43,8 +46,6 @@ public class timetable extends AppCompatActivity implements MainContract.View {
         timetable.setOnStickerSelectEventListener(new TimetableView.OnStickerSelectedListener() {
             @Override
             public void OnStickerSelected(int idx, ArrayList<com.github.tlaabs.timetableview.Schedule> schedules) {
-
-
                 AlertDialog.Builder builder = new AlertDialog.Builder(timetable.this);
                 builder.setTitle("Selected Sticker");
                 final String[] selectArray = new String[]{"수정하기", "길찾기","삭제하기"};
@@ -57,16 +58,17 @@ public class timetable extends AppCompatActivity implements MainContract.View {
                         String selectedOption = selectArray[position];
                         switch (selectedOption) {
                             case "수정하기":
-                                mainPresenter.selectSticker(idx,schedules); // Handle 수정하기 action
+                                mainPresenter.selectSticker(idx, schedules); // Handle 수정하기 action
                                 break;
                             case "길찾기":
-                                // Handle 길찾기 action
+                                String selectedValue = ""; // 여기에 selectedValue 값을 저장하는 코드 작성
+                                Intent intent = new Intent(timetable.this, search.class);
+                                intent.putExtra("selectedValue", selectedValue); // selectedValue 값을 인텐트에 추가
+                                startActivity(intent); // Start search activity
                                 break;
-
-                            case "삭제하기" :
-                                
-
-
+                            case "삭제하기":
+                                timetable.remove(idx);
+                                break;
                         }
                     }
                 });
@@ -79,7 +81,6 @@ public class timetable extends AppCompatActivity implements MainContract.View {
             }
 
         });
-
 
         addBtn = findViewById(R.id.addBtn);
         addBtn.setOnClickListener(new View.OnClickListener() {

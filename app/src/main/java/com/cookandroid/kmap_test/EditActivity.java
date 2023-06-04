@@ -43,6 +43,13 @@ public class EditActivity extends AppCompatActivity implements EditContract.View
 
     private EditPresenter editPresenter;
 
+    private String[] structureArray = {
+            "A1", "A2", "A8", "A9", "B1", "B2", "B3",
+            "B4", "B8", "C1", "C2", "C4", "C6", "C7", "C9",
+            "C12", "C13", "D1", "D2", "D5", "D6", "D7",
+            "D8", "D9", "D10", "D11", "D15", "D17", "D18"
+    };
+
     ArrayList<Schedule> allSchedules = new ArrayList<Schedule>();
 
     TextView titleView;
@@ -63,6 +70,7 @@ public class EditActivity extends AppCompatActivity implements EditContract.View
         setContentView(R.layout.activity_time_picker);
         context = this;
 
+
         editPresenter = new EditPresenter(this);
         titleView = findViewById(R.id.title);
         classTitle = findViewById(R.id.class_title);
@@ -77,27 +85,23 @@ public class EditActivity extends AppCompatActivity implements EditContract.View
         addStructureBtn=findViewById(R.id.structure);
 
 
-        addStructureBtn.setOnClickListener(new View.OnClickListener(){
-
+        addStructureBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                final String[] structureArray = new String[] {"A1","A2","A8","A9","B1","B2","B3",
-                        "B4","B8","C1","C2","C4","C6","C7","C9",
-                        "C12","C13","D1","D2","D5","D6","D7",
-                        "D8","D9","D10","D11","D15","D17","D18"};
                 AlertDialog.Builder dlg = new AlertDialog.Builder(EditActivity.this);
                 dlg.setTitle("강의동 선택");
-                dlg.setItems(structureArray, new DialogInterface.OnClickListener(){
+                dlg.setItems(structureArray, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        addStructureBtn.setText(structureArray[which]);
+                        String selectedValue = structureArray[which];
+                        addStructureBtn.setText("[" + selectedValue + "]");
+                        classPlace.setText("[" + selectedValue + "]");
                     }
                 });
-                dlg.setPositiveButton("닫기",null);
+                dlg.setPositiveButton("닫기", null);
                 dlg.show();
             }
         });
-
 
 
 
