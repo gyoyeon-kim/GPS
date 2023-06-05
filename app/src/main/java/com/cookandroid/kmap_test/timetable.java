@@ -63,12 +63,17 @@ public class timetable extends AppCompatActivity implements MainContract.View {
         mainPresenter = new MainPresenter(this);
         mainPresenter.setPrefManager(PrefManager.getInstance());
 
+
+
         timetable = findViewById(R.id.timetable);
         timetable.setOnStickerSelectEventListener(new TimetableView.OnStickerSelectedListener() {
             @Override
             public void OnStickerSelected(int idx, ArrayList<com.github.tlaabs.timetableview.Schedule> schedules) {
+
+                String Title = schedules.get(0).getClassTitle();
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(timetable.this);
-                builder.setTitle("Selected Sticker");
+                builder.setTitle(Title);
                 final String[] selectArray = new String[]{"수정하기", "길찾기","삭제하기"};
 
                 // Set the items for the dialog using selectArray
