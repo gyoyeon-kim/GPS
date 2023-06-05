@@ -267,6 +267,7 @@ public class timetable extends AppCompatActivity implements MainContract.View {
 
                             case "삭제하기":
                                 timetable.remove(idx);
+                                mainPresenter.save(timetable.createSaveData());
                                 break;
                         }
                     }
